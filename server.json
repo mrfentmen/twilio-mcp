@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.mrfentmen/twilio-mcp-server",
+  "description": "MCP server for Twilio communications. Send SMS, MMS, WhatsApp messages, make voice calls, and manage phone numbers.",
+  "repository": {
+    "url": "https://github.com/mrfentmen/twilio-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "twilio-mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TWILIO_ACCOUNT_SID",
+          "description": "Your Twilio Account SID",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true
+        },
+        {
+          "name": "TWILIO_AUTH_TOKEN",
+          "description": "Your Twilio Auth Token",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
