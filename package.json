@@ -1,6 +1,6 @@
 {
   "name": "twilio-mcp-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for Twilio communications. Send SMS, MMS, WhatsApp messages, make voice calls, and manage phone numbers.",
   "type": "module",
   "mcpName": "io.github.mrfentmen/twilio-mcp-server",
