@@ -1,0 +1,37 @@
+{
+  "name": "twilio-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Twilio communications. Send SMS, MMS, WhatsApp messages, make voice calls, and manage phone numbers.",
+  "type": "module",
+  "bin": {
+    "twilio-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "/opt/homebrew/bin/tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "rm -rf dist && /opt/homebrew/bin/tsc -p tsconfig.json && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "twilio",
+    "sms",
+    "mms",
+    "whatsapp",
+    "voice",
+    "calls",
+    "phone"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
